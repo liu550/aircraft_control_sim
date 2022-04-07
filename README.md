@@ -25,9 +25,9 @@ The following compare the results calculated by the program versus the results u
 ### Lateral/directional modes
 #### Results
 <p float="left">
- <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-rolling-mode.png" width="300" height="300">
- <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-spiral-mode.png" width="300" height="300">
- <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-dutch-roll.png" width="300" height="300">
+ <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-rolling-mode.png" width="400" height="300">
+ <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-spiral-mode.png" width="400" height="300">
+ <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-dutch-roll.png" width="400" height="300">
 </p>
 
 #### Professor Caughey's reference results
