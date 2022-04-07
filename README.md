@@ -56,3 +56,4 @@ The differences between the results produced by the program and professor Caughe
 ## Future work
 1. Improve the software architecture;
 2. Implement Simplex algorithm to trim non-linear models.
+3. Increase the complexities of the model and benchmark the results against the references provided by NASA.
