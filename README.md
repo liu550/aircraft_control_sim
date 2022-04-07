@@ -11,6 +11,7 @@
 
 ## Demonstration
 
+### Overview
 The Jupyter Notebook file `plot.ipynb` inside the python folder showcases the following lateral/directional-mode state evolutions implemented with the program:
 1. Rolling mode stability;
 2. Spiral mode stability;
@@ -31,7 +32,6 @@ The following compare the results calculated by the program versus the results u
 
 #### Professor Caughey's reference results
 <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-caughey-lat:dir-modes.png">
-![img](assets/images/ss-caughey-lat:dir-modes.png)
 
 ### Trim
 #### Results
@@ -43,3 +43,13 @@ The following compare the results calculated by the program versus the results u
 
 #### Professor Caughey's reference results
 <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-caughey-lat:dir-trim.png">
+
+### Notes
+The state and control vector explodes when setting penalty parameter (c_u) to 0.5. Likely a problem of the Riccati solver.
+
+### Summary
+The differences between the results produced by the program and professor Caughey's results mainly come from different values of dimensional derivatives and possibly different control vectors found by the optimizers. Despite the differences, the program is able to demonstrate (1) the characteristics of the free responses of the aircraft in the three lateral/directional modes and (2) that the pertubation is more heavily damped when using a higher penalty parameter for the control vector during trimming.
+
+## Future work
+1. Improve and software architecture;
+2. Implement Simplex algorithm to trim non-linear models.
