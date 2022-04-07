@@ -19,5 +19,7 @@ The Jupyter Notebook file `plot.ipynb` inside the python folder showcases the fo
 
 The configuration and dimensionless aerodynamic coefficients data are of Boeing 747, obtained from the aircraft handling qualities data reported by NASA (can be found inside the data folder). The configuration used is power approach configuration.
 
-The following is a comparison between the results calculated by the program versus the results used by Professor Caughey in his lectures notes on aircraft control:
+The following compare the results calculated by the program versus the results used by Professor Caughey in his lectures notes on aircraft control:
 
+###
+!(assets/images/ss-rolling-mode)
