@@ -14,8 +14,6 @@
 #include <eigen3/Eigen/Eigen>
 using namespace Eigen;
 
-
-
 std::map<std::string, MathExpressionElementType> g_MathOperatorTypeLookupTable;
 std::map<MathExpressionElementType, std::string> g_MathOperatorTypeToStringLookupTable;
 int g_SignOperatorCheck = 12;
@@ -410,12 +408,30 @@ MatrixVariable GenerateInitialConditions() {
                1,
               -0.25;
     */
+    
+
+    // Rolling mode
+    /*
+    x_vals << 27.91,
+            1,
+            -0.8,
+            0;
+    */
+
+    // Spiral mode
+    /*
+    x_vals << 13.955,
+        -0.05,
+        1,
+        0.1;
+    */
 
     // Unit perturbation in sideslip
     x_vals << 279.1,
               0,
               0,
               0;
+
 
     MatrixVariable x(x_vars, x_vals);
     return x;
@@ -453,8 +469,16 @@ MatrixVariable GenerateControlMatrix() {
     B_vars.push_back(B_vars_3);
     B_vars.push_back(B_vars_4);
 
+    // Without control
+    /*
+    MatrixXd B_vals(4, 2);
+    B_vals.setZero(); 
+    MatrixVariable B(B_vars, B_vals);
+    */
+
+   // With control
     MatrixVariable B(B_vars);
-    B.Evaluate();
+    B.Evaluate(); 
     return B;
 }
 
@@ -643,49 +667,7 @@ int main() {
     */
 
 
-    // Initialize lateral/directional state variables:
-    // Sideslip, row rate, row angle, yaw rate
-    /*
-    variables_lookup_table["AV_v"] = new Variable("AV_v", nullptr);
-    variables_lookup_table["AV_p"] = new Variable("AV_p", nullptr);
-    variables_lookup_table["AV_phi"] = new Variable("AV_phi", nullptr);
-    variables_lookup_table["AV_r"] = new Variable("AV_r", nullptr);
-    std::vector< std::vector<Variable*> > lateral_directional_state_variables;
-    std::vector<Variable*> lateral_directional_state_variables_1;
-    lateral_directional_state_variables_1.push_back(variables_lookup_table["AV_v"]);
-    lateral_directional_state_variables_1.push_back(variables_lookup_table["AV_p"]);
-    lateral_directional_state_variables_1.push_back(variables_lookup_table["AV_phi"]);
-    lateral_directional_state_variables_1.push_back(variables_lookup_table["AV_r"]);
-    lateral_directional_state_variables.push_back(lateral_directional_state_variables_1);
-
-    MatrixXd dutch_roll_initial_conditions(4, 1);
-    dutch_roll_initial_conditions << 97.685,
-                                     -0.1,
-                                     1,
-                                     -0.25;
-    x = MatrixVariable(lateral_directional_state_variables, dutch_roll_initial_conditions);
-
-    std::vector< std::vector<Variable*> > x_d_vars;
-    MatrixXd x_d_vals(x.values.rows(), x.values.cols());
-    x_d_vals.setZero();
-    x_d = MatrixVariable(x_d_vars, x_d_vals);
-
-    std::vector< std::vector<Variable*> > B_vars;
-    MatrixXd B_vals(x.values.rows(), 2);
-    B_vals.setZero();
-    B = MatrixVariable(B_vars, B_vals);
-
-    std::vector< std::vector<Variable*> > u_vars;
-    MatrixXd u_vals(2, 1);
-    u_vals.setZero();
-    u = MatrixVariable(u_vars, u_vals);
-
-    std::vector< std::vector<Variable*> > B_vars;
-    MatrixXd B_vals(x.values.rows(), u.values.rows());
-    B_vals.setZero();
-    B = MatrixVariable(B_vars, B_vals);
-    */
-
+    // Initialize lateral/directional mode state model:
     MatrixVariable x, x_d, u, B;
 
     x = GenerateInitialConditions();

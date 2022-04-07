@@ -81,7 +81,7 @@ void StateModel::Update(double dt, double duration, bool should_print_results) {
     }
 
     // Write to file
-    fp = fopen("lat-dir-trim-c_u=2.txt", "wb");
+    fp = fopen("lat-dir-trim-c_u=0.00001.txt", "wb");
     char buffer[result.size() + 1];
     std::strcpy(buffer, result.c_str());
     fwrite(buffer, sizeof(char), sizeof(buffer), fp);

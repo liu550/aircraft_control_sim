@@ -14,9 +14,9 @@ void AlgebraicRiccati(LinearStateModel &linear_state_model) {
 
     MatrixXd R(B.cols(), B.cols()); // Dimension of the control vector
     R.setZero();
-    double u_cost = 2;
+    double u_cost = 0.00001;
     for (int i = 0; i < R.rows(); i++) {
-        R(i, i) = u_cost;
+        R(i, i) = 1 / (u_cost * u_cost);
     }
 
     MatrixXd T(B.rows(), B.cols());
