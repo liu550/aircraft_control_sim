@@ -2,6 +2,9 @@
 
  The project is developed for the purpose of acquainting myself with basic aircraft control knowledge.
  
+ ## Notes
+ Embarrassing in the plots below...(Should be "roll")
+ 
  ## Functionalities
  
  The project consists of the following parts:
@@ -18,9 +21,9 @@ The Jupyter Notebook file `plot.ipynb` inside the python folder showcases the fo
 3. Dutch roll stability;
 4. Trimming of the aircraft undergoing a unit perturbation in sideslip, with different penalty parameters for the control vector.
 
-The configuration and dimensionless aerodynamic coefficients data are of Boeing 747, obtained from the aircraft handling qualities data reported by NASA (can be found inside the data folder). The configuration used is power approach configuration.
+The configuration and dimensionless aerodynamic coefficients data are of Boeing 747, obtained from the [aircraft handling qualities data reported by NASA](https://ntrs.nasa.gov/citations/19730003312). The configuration used is power approach configuration.
 
-The following compare the results calculated by the program versus the results used by Professor Caughey in his lectures notes on aircraft control:
+The following compare the results calculated by the program versus the results used by Professor Caughey in his [lectures notes on aircraft control](https://courses.cit.cornell.edu/mae5070/Caughey_2011_04.pdf):
 
 ### Lateral/directional modes
 #### Results
@@ -36,9 +39,9 @@ The following compare the results calculated by the program versus the results u
 ### Trim
 #### Results
 <p float="left">
- <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-trim-c_u=0.00001.png" width="300" height="300">
- <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-trim-c_u=0.1.png" width="300" height="300">
- <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-trim-c_u=2.png" width="300" height="300">
+ <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-trim-c_u=0.00001.png" width="400" height="300">
+ <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-trim-c_u=0.1.png" width="400" height="300">
+ <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-trim-c_u=2.png" width="400" height="300">
 </p>
 
 #### Professor Caughey's reference results
