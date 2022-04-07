@@ -21,11 +21,23 @@ The configuration and dimensionless aerodynamic coefficients data are of Boeing 
 
 The following compare the results calculated by the program versus the results used by Professor Caughey in his lectures notes on aircraft control:
 
-###
+### Lateral/directional modes
+#### Results
 <p float="left">
- <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-rolling-mode.png" width="250" height="250">
- <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-spiral-mode.png" width="250" height="250">
- <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-dutch-roll.png" width="250" height="250">
+ <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-rolling-mode.png" width="300" height="300">
+ <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-spiral-mode.png" width="300" height="300">
+ <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-dutch-roll.png" width="300" height="300">
 </p>
+#### Professor Caughey's reference results
 <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-caughey-lat:dir-modes.png">
 ![img](assets/images/ss-caughey-lat:dir-modes.png)
+
+### Trim
+#### Results
+<p float="left">
+ <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-trim-c_u=0.00001.png" width="300" height="300">
+ <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-trim-c_u=0.1.png" width="300" height="300">
+ <img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-trim-c_u=2.png" width="300" height="300">
+</p>
+#### Professor Caughey's reference results
+<img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-caughey-lat:dir-trim.png">
