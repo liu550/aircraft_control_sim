@@ -22,6 +22,6 @@ The configuration and dimensionless aerodynamic coefficients data are of Boeing 
 The following compare the results calculated by the program versus the results used by Professor Caughey in his lectures notes on aircraft control:
 
 ###
-<img src="assets/images/ss-spiral-mode.png | width=10" width="100" height="100">
+<img src="https://github.com/liu550/aircraft_control_sim/blob/main/assets/images/ss-spiral-mode.png" width="100" height="100">
 ![img](assets/images/ss-spiral-mode.png | width=10)     ![img](assets/images/ss-dutch-roll.png =100x100)
 ![img](assets/images/ss-caughey-lat:dir-modes.png)
