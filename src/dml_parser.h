@@ -8,7 +8,7 @@
 class DMLParser {
 
 public:
-    void Parse(string fn);
+    void Parse(std::string fn);
 
 private:
 

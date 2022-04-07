@@ -1,0 +1,35 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang++ build active file",
+			"command": "/usr/bin/clang++",
+			"args": [
+				"-g",
+				"-std=c++17",
+				"${file}",
+				"${workspaceFolder}/src/riccati_solver.cpp",
+				//"${workspaceFolder}/src/math_expression_element.cpp",
+				"${workspaceFolder}/src/variable.cpp",
+				"${workspaceFolder}/src/model.cpp",
+				"${workspaceFolder}/src/state_model.cpp",
+				"${workspaceFolder}/src/integrations.cpp",
+				"${workspaceFolder}/src/optimizers.cpp",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: /usr/bin/clang++"
+		}
+	]
+}
