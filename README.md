@@ -22,5 +22,5 @@ The configuration and dimensionless aerodynamic coefficients data are of Boeing 
 The following compare the results calculated by the program versus the results used by Professor Caughey in his lectures notes on aircraft control:
 
 ###
-![img](assets/images/ss-spiral-mode.png)     ![img](assets/images/ss-dutch-roll.png)
+![img](assets/images/ss-spiral-mode.png =100x100)     ![img](assets/images/ss-dutch-roll.png =100x100)
 ![img](assets/images/ss-caughey-lat:dir-modes.png)
