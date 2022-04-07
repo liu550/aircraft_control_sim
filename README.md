@@ -23,7 +23,7 @@ The Jupyter Notebook file `plot.ipynb` inside the python folder showcases the fo
 
 The configuration and dimensionless aerodynamic coefficients data are of Boeing 747, obtained from the [aircraft handling qualities data reported by NASA](https://ntrs.nasa.gov/citations/19730003312). The configuration used is power approach configuration.
 
-The following compare the results calculated by the program versus the results used by Professor Caughey in his [lectures notes on aircraft control](https://courses.cit.cornell.edu/mae5070/Caughey_2011_04.pdf):
+The following compare the results calculated by the program versus the results used by Professor Caughey in his [lecture notes on aircraft control](https://courses.cit.cornell.edu/mae5070/Caughey_2011_04.pdf):
 
 ### Lateral/directional modes
 #### Results
@@ -51,8 +51,8 @@ The following compare the results calculated by the program versus the results u
 The state and control vector explodes when setting penalty parameter (c_u) to 0.5. Likely a problem of the Riccati solver.
 
 ### Summary
-The differences between the results produced by the program and professor Caughey's results mainly come from different values of dimensional derivatives and possibly different control vectors found by the optimizers. Despite the differences, the program is able to demonstrate (1) the characteristics of the free responses of the aircraft in the three lateral/directional modes and (2) that the pertubation is more heavily damped when using a higher penalty parameter for the control vector during trimming.
+The differences between the results produced by the program and professor Caughey's results possibly come from different values of dimensional derivatives and different control vectors found by the optimizers. Despite the differences, the program is able to demonstrate (1) the characteristics of the free responses of the aircraft in the three lateral/directional modes and (2) that the pertubation is more heavily damped when using a higher penalty parameter for the control vector during trimming.
 
 ## Future work
-1. Improve and software architecture;
+1. Improve the software architecture;
 2. Implement Simplex algorithm to trim non-linear models.
