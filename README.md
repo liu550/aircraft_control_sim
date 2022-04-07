@@ -3,7 +3,7 @@
  The project is developed for the purpose of acquainting myself with basic aircraft control knowledge.
  
  ## Notes
- Embarrassing in the plots below...(Should be "roll")
+ Embarrassing typos in the plots below......(Should be "roll")
  
  ## Functionalities
  
