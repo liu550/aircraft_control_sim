@@ -54,6 +54,6 @@ The state and control vector explodes when setting penalty parameter (c_u) to 0.
 The differences between the results produced by the program and professor Caughey's results possibly come from different values of dimensional derivatives and different control vectors found by the optimizers. Despite the differences, the program is able to demonstrate (1) the characteristics of the free responses of the aircraft in the three lateral/directional modes and (2) that the pertubation is more heavily damped when using a higher penalty parameter for the control vector during trimming.
 
 ## Future work
-1. Improve the software architecture;
+1. Improve the software architecture, mainly by making Variable class a derived class of MathExpressionElement;
 2. Implement Simplex algorithm to trim non-linear models.
-3. Increase the complexities of the model and benchmark the results against the references provided by NASA.
+3. Increase the complexities of the state and control matrices and benchmark the results against the references provided by NASA.
